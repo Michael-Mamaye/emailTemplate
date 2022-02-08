@@ -3,12 +3,16 @@ doctype html
 html
   head
     title= `${title}`
+    meta( charset="utf-8")
+    
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
     link(rel='stylesheet' 
         href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
         integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' 
         crossorigin='anonymous')
     link(rel='stylesheet' href='styles/styles.css' type='text/css')
-
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     script(src='https://code.jquery.com/jquery-3.2.1.min.js'
            integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
            crossorigin='anonymous')
@@ -25,11 +29,40 @@ html
 
     div(class='container-fluid' style="color:rgb(69,69,69,0.9)")
         .container
-            div(class="col-lg-10")
+            div(class="col-lg-8 col-xs-10" )
                 block content
-
-    div(style="margin:0px;background-color:black;color:white;")
-        div(class='container-fluid' style="display:flex;flex-direction:coloumn;align-content:center;justify-content:center")
-            include footer.pug
-            +footer(.row,.col-sm-4,col-lg-12)
-    
+                block content2
+                block content3
+    div(style="margin:0px;padding:50px;background-color:black;color:white;")
+        div(class='container' style="display:flex;flex-direction:coloumn;align-content:center;justify-content:center")
+            .col
+                div.row(style="text-align:center;")
+                    .col-xs-4
+                        include footer.pug
+                        +footer("fa fa-lg fa-facebook","#")
+                    .col-xs-4
+                        include footer.pug
+                        +footer("fa fa-lg fa-instagram","#")
+                    .col-xs-4
+                        include footer.pug
+                        +footer("fa fa-lg fa-link","#")
+                br
+                hr(style="border:1px solid white;opacity:0.5;width:140%;margin-left:-20%")
+                .row
+                    div(style="text-align:center")
+                        i="Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved."
+                        br
+                        p="*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*"
+                        br
+                        email="Our mailing address is:"
+                        p="*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*"
+                        email="Want to change how you receive these emails?"
+                        br
+                        span(style="display:flex;flex-direction:row;text-align:center")
+                            p="You can"
+                                a(style="color:rgb(200,200,200)")=" update your preferences" 
+                            
+                            p(style="padding-left:5px")="or "
+                                a(style="color:rgb(200,200,200)")="unsubscribe from this list."
+                        br
+                        p="*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*"

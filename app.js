@@ -13,6 +13,12 @@ app.use(express.static(path.join(__dirname,'public')))
 app.get('/', function (req, res) {
     res.render('content',{title:'Email Template'})
 })
+app.get('/content2', function (req, res) {
+    res.render('content2',{title:'Email Template'})
+})
+app.get('/content3', function (req, res) {
+    res.render('content3',{title:'Email Template'})
+})
 
 app.listen(5000,()=>{
     console.log('running on port 5000')
