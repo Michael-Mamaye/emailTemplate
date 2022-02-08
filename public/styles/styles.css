@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    max-width: 1900px;
 }
 .headerDiv{
     background-image: url('/images/headerImage.jpg');
@@ -17,4 +18,13 @@
 .contentDiv{
     position: absolute;
     top: 25%;
+}
+.circularDiv{
+    border: 2px solid white;
+    margin: 0px;
+    border-radius: 40%;
+    padding:7px;
+}
+.circularDiv:hover{
+    text-decoration: none;
 }
