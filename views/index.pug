@@ -32,20 +32,20 @@ html
                 block content
                 block content2
                 block content3
-    div(style="margin:0px;padding:50px;background-color:black;color:white;")
+    div(style="margin:0px;padding:50px;background-color:rgba(0,0,0,0.8);color:white;")
         div(class='container' style="display:flex;flex-direction:coloumn;align-content:center;justify-content:center")
             .col
                 div.row(style="text-align:center;")
                     .col-xs-3
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-facebook","#")
+                        +footer("fa fa-lg fa-facebook","/content2")
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-instagram","#")
+                        +footer("fa fa-lg fa-instagram","/")
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-link","#")
+                        +footer("fa fa-lg fa-link","/content3")
                     .col-xs-3
                 br
                 hr(style="border:1px solid white;opacity:0.2;width:140%;margin-left:-20%")
