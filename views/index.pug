@@ -12,7 +12,6 @@ html
         integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' 
         crossorigin='anonymous')
     link(rel='stylesheet' href='styles/styles.css' type='text/css')
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     script(src='https://code.jquery.com/jquery-3.2.1.min.js'
            integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
            crossorigin='anonymous')
@@ -28,7 +27,6 @@ html
         +header()
 
     div(class='container' style="color:rgb(69,69,69,0.9)")
-            div(class="col-lg-8 col-xs-10" )
                 block content
                 block content2
                 block content3
@@ -39,13 +37,13 @@ html
                     .col-xs-3
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-facebook","/content2")
+                        +footer("images/facebook.png","/content2")
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-instagram","/")
+                        +footer("images/instagram.png","/")
                     .col-xs-2
                         include footer.pug
-                        +footer("fa fa-lg fa-link","/content3")
+                        +footer("images/linkBuilderIcon.png","/content3")
                     .col-xs-3
                 br
                 hr(style="border:1px solid white;opacity:0.2;width:140%;margin-left:-20%")
