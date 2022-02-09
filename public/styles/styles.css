@@ -28,9 +28,6 @@ body{
     position: absolute;
     top: 25%;
 }
-.circularDiv{
-    height:30px;
-}
 .circularDiv:hover{
     text-decoration: none;
 }
