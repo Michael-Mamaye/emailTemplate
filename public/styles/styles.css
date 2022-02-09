@@ -23,7 +23,18 @@ body{
     }
 }
 
+.resetButton{
+    font-weight:bold;
+    font-size:16px;
+    border:2px solid #337ab7;
+    padding:5px;
+    border-radius: 5px;
+}
 
+.resetButton:hover{
+    text-decoration: none;
+    background-color: #3379b71e;
+}
 .contentDiv{
     position: absolute;
     top: 25%;
