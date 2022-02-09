@@ -11,13 +11,22 @@ app.set('view engine', 'pug')
 app.use(express.static(path.join(__dirname,'public')))
 
 app.get('/', function (req, res) {
-    res.render('content',{title:'Email Template'})
+    res.render('orderConfirmation',{title:'Order Confirmation'})
 })
-app.get('/content2', function (req, res) {
-    res.render('content2',{title:'Email Template'})
+app.get('/newOrder', function (req, res) {
+    res.render('newOrder',{title:'New Order'})
 })
-app.get('/content3', function (req, res) {
-    res.render('content3',{title:'Email Template'})
+app.get('/orderComplete', function (req, res) {
+    res.render('orderComplete',{title:'Order Complete'})
+})
+app.get('/activation', function (req, res) {
+    res.render('activation',{title:'Activation Required'})
+})
+app.get('/passwordReset', function (req, res) {
+    res.render('passwordReset',{title:'Password Reset'})
+})
+app.get('/linkPublished', function (req, res) {
+    res.render('linkPublished',{title:'Link Published'})
 })
 
 app.listen(5000,()=>{

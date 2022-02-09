@@ -27,9 +27,13 @@ html
         +header()
 
     div(class='container' style="color:rgb(69,69,69,0.9)")
-                block content
-                block content2
-                block content3
+                block orderConfirmation
+                block newOrder
+                block orderComplete
+                block activation 
+                block passwordReset 
+                block linkPublished 
+
     div(style="margin:0px;padding:50px;background-color:rgba(0,0,0,0.8);color:white;")
         div(class='container' style="display:flex;flex-direction:coloumn;align-content:center;justify-content:center")
             .col
@@ -37,18 +41,18 @@ html
                     .col-xs-3
                     .col-xs-2
                         include footer.pug
-                        +footer("images/facebook.png","/content2")
+                        +footer("images/facebook.png","https://www.facebook.com/linkdotbuilders")
                     .col-xs-2
                         include footer.pug
-                        +footer("images/instagram.png","/")
+                        +footer("images/instagram.png","https://www.instagram.com/link.builders/")
                     .col-xs-2
                         include footer.pug
-                        +footer("images/linkBuilderIcon.png","/content3")
+                        +footer("images/linkBuilderIcon.png","https://link.builders/")
                     .col-xs-3
                 br
                 hr(style="border:1px solid white;opacity:0.2;width:140%;margin-left:-20%")
                 .row
                     div(style="text-align:center")
-                        i="Copyright © 2022 Addis Software, All rights reserved."
+                        i="Copyright © | 2022 | Addis Software, All rights reserved."
                         br
                         

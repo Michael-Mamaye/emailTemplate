@@ -1,34 +1,47 @@
 extends index
 
-block content3
-
-    h3(style="font-weight:bold")="Content 3 page"
+block linkPublished
     br
-    p="Thank you for your order. We will inform the webmasters about your order and will notify you when the order has been fully processed."
-
-    p="If you want to follow the process and see what links has gone live, please do so from your Link.Builders-account."
+    h4(style="font-weight:bold")="CONGRATULATION! ONE OF YOUR ORDER ITEM GOT PUBLISHED"
+    br
+    span="Hi: "
+    span(style="font-weight:bold")="Zelalem Client"
     br
     br
-    b="Name:"
-    span=" Lucas Gerhardsson"
+    span="We have published one link item at order number "
+    b="#2164 "
+    span="Here's an item summary:"
+    
     br
-    b="Order Number: "
-    span="2163"
     br
-    b="Number of Links: "
-    span=" 2"
-    br
-    b="Total amount:"
-    span=" €451"
-    br
-    b="Order Date: "
-    span="16/09/21"
-
     br
 
+    b="Link from: "
+        a(href="https://chandigarhmetro.com")="https://chandigarhmetro.com"
+        br
+    b="Link to: "
+        a(href="https://bbc.com")="https://bbc.com"
+        br
+    b="Link type: "
+    b="item total: "
+    span="€150"
+    br
+    b="Publish Date: "
+    span="07/10/21"
+    br
+    b="Anchor text: "
+    span="text"
+    br
+    b="Article title: "
+    span="Not Available"
+    br
+    b="status: "
+    span="Accepted"
+
     br
     br
     br
+
     div(style="display:flex;flex-direction:column;justify-content: center;align-items:center;width:100%;")
         a(href="https://app.link.builders")
             button(class="btn btn-lg btn-primary " )="Login to Link.Builders"
@@ -36,7 +49,7 @@ block content3
     br
     br
     i
-        h3(style="opacity:0.8")="Through our platform, you will be able to..."
+        h4(style="opacity:0.8")="Through our platform, you will be able to..."
     br
     p="- Monitor your links: we are checking the links every day and you will notice if a link disappears, is changing rel-attribute, anchor text or similar."
     br
